@@ -26,5 +26,5 @@ for metar in root.iter('METAR'):
 	conditionDict[stationId] = flightCategory
 	#print("" + stationId + ": " + flightCategory)
 
-for airportcode in airports:
+for airportCode in airports:
 	print ("" + airportCode + ": " + conditionDict[airportCode])
