@@ -3,7 +3,8 @@ import xml.etree.ElementTree as ET
 
 with open("airports.txt") as f:
 	airports = f.readlines()
-#airports = [x.strip() for x in airports]
+airports = [x.strip() for x in airports]
+print(airports)
 
 # Retrieve METAR from aviationweather.gov data server
 # Details about parameters can be found here: https://www.aviationweather.gov/dataserver/example?datatype=metar
