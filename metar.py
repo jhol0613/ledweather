@@ -23,4 +23,4 @@ for metar in root.iter('METAR'):
 		continue
 	flightCategory = metar.find('flight_category').text
 	conditionDict[stationId] = flightCategory
-	print("" + stationId + ": " flightCategory)
+	print("" + stationId + ": " + flightCategory)
