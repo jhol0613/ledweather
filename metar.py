@@ -1,7 +1,7 @@
 import urllib.request
 import xml.etree.ElementTree as ET
 
-with open("/airports.txt") as f:
+with open("airports.txt") as f:
 	airports = f.readlines()
 airports = [x.strip() for x in airports]
 
