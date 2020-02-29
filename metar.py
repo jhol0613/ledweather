@@ -20,8 +20,11 @@ for metar in root.iter('METAR'):
 	stationId = metar.find('station_id').text
 	if metar.find('flight_category') is None:
 		print("Missing flight condition, skipping.")
-		print("Missing flight condition for " + stationId)
+		#print("Missing flight condition for " + stationId)
 		continue
 	flightCategory = metar.find('flight_category').text
 	conditionDict[stationId] = flightCategory
-	print("" + stationId + ": " + flightCategory)
+	#print("" + stationId + ": " + flightCategory)
+
+for airportcode in airports:
+	print ("" + airportCode + ": " + conditionDict[airportCode])
