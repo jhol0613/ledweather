@@ -4,6 +4,12 @@ from colors import Colors
 import board
 import neopixel
 
+COLOR_VFR = (50,0,0)
+COLOR_MVFR = (0,0,50)
+COLOR_IFR = (0,50,0)
+COLOR_LIFR = (0,25,25)
+COLOR_ERROR = (20,20,20)
+
 with open("airports.txt") as f:
 	airports = f.readlines()
 airports = [x.strip() for x in airports]
@@ -35,15 +41,15 @@ pixels = neopixel.NeoPixel(board.D18, len(conditionDict))
 for i, airportCode in enumerate(airports):
 	if flightCategory != "No":
 		if flightCategory == "VFR":
-			color = Colors.VFR
+			color = COLOR_VFR
 		elif flightCategory == "MVFR":
-			color = Colors.MVFR
+			color = COLOR_MVFR
 		elif flightCategory == "IFR":
-			color = Colors.IFR
+			color = COLOR_IFR
 		elif flightCategory == "LIFR":
-			color = Colors.LIFR
+			color = COLOR_LIFR
 		else:
-			color = colors.ERROR
+			color = COLOR_ERROR
 
 	pixels[i] = color
 	print ("" + airportCode + ": " + conditionDict[airportCode])
