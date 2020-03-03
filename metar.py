@@ -1,5 +1,6 @@
 import urllib.request
 import xml.etree.ElementTree as ET
+import colors
 
 with open("airports.txt") as f:
 	airports = f.readlines()
