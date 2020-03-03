@@ -38,14 +38,14 @@ for metar in root.iter('METAR'):
 pixels = neopixel.NeoPixel(board.D18, len(conditionDict))
 
 for i, airportCode in enumerate(airports):
-	if flightCategory != "No":
-		if flightCategory == "VFR":
+	if conditionDict[airportCode] != "No":
+		if conditionDict[airportCode] == "VFR":
 			color = COLOR_VFR
-		elif flightCategory == "MVFR":
+		elif conditionDict[airportCode] == "MVFR":
 			color = COLOR_MVFR
-		elif flightCategory == "IFR":
+		elif conditionDict[airportCode] == "IFR":
 			color = COLOR_IFR
-		elif flightCategory == "LIFR":
+		elif conditionDict[airportCode] == "LIFR":
 			color = COLOR_LIFR
 		else:
 			color = COLOR_ERROR
