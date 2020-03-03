@@ -1,6 +1,6 @@
 import urllib.request
 import xml.etree.ElementTree as ET
-import colors
+from colors import Colors
 import board
 import neopixel
 
