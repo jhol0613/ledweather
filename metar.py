@@ -30,7 +30,7 @@ for metar in root.iter('METAR'):
 	conditionDict[stationId] = flightCategory
 	#print("" + stationId + ": " + flightCategory)
 
-pixels = neopixel.NeoPixel(board.D18, conditionDict.length)
+pixels = neopixel.NeoPixel(board.D18, conditionDict.len())
 
 for i, airportCode in enumerate(airports):
 	if flightCategory != "No":
