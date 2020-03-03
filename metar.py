@@ -51,7 +51,7 @@ for i, airportCode in enumerate(airports):
 			color = COLOR_ERROR
 
 	pixels[i] = color
-	print ("" + airportCode + ": " + conditionDict[airportCode])
+	print ("" + airportCode + ": " + conditionDict[airportCode] + ", " + color)
 
 
 
