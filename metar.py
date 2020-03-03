@@ -6,7 +6,7 @@ import neopixel
 COLOR_VFR = (50,0,0)
 COLOR_MVFR = (0,0,50)
 COLOR_IFR = (0,50,0)
-COLOR_LIFR = (0,25,25)
+COLOR_LIFR = (0,50,50)
 COLOR_ERROR = (20,20,20)
 
 with open("airports.txt") as f:
