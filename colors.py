@@ -1,5 +1,5 @@
 from enum import Enum
-class Color(Enum):
+class Colors(Enum):
 	# GRB order
 	VFR = (50,0,0)
 	MVFR = (0,0,50)

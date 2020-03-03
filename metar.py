@@ -35,13 +35,13 @@ pixels = neopixel.NeoPixel(board.D18, len(conditionDict))
 for i, airportCode in enumerate(airports):
 	if flightCategory != "No":
 		if flightCategory == "VFR":
-			color = colors.VFR
+			color = Colors.VFR
 		elif flightCategory == "MVFR":
-			color = colors.MVFR
+			color = Colors.MVFR
 		elif flightCategory == "IFR":
-			color = colors.IFR
+			color = Colors.IFR
 		elif flightCategory == "LIFR":
-			color = colors.LIFR
+			color = Colors.LIFR
 		else:
 			color = colors.ERROR
 
