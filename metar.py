@@ -2,6 +2,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 import board
 import neopixel
+import time
 
 COLOR_VFR = (50,0,0)
 COLOR_MVFR = (0,0,50)
