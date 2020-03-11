@@ -56,6 +56,7 @@ while (True):
 				color = COLOR_ERROR
 
 		pixels[i] = color
+		print ("updated")
 		print ("" + airportCode + ": " + conditionDict[airportCode] + ", " + flightCategory)
 
 	time.sleep(REFRESH_RATE)
